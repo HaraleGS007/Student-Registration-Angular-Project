@@ -1,0 +1,58 @@
+<div class="main">
+
+    <div class="container" >
+  
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <h2 class="text-center mb-3">
+                        Student Login
+                    </h2>
+                    <h5 class="text-center">Feel To Login Form</h5>
+                    <hr>
+                    <form [formGroup]="loginform" (ngSubmit)="login()">
+
+                        <div class="mb-3">
+                            <mat-form-field class="gh">
+                                <mat-label>Email ID</mat-label>
+                                <input matInput placeholder="Enter Your Email" value="h@gmail.com" type="text"
+                                    formControlName="email" class="form-control"
+                                    [ngClass]="{ 'is-invalid': submitted && f['email'].errors }">
+                            </mat-form-field>
+
+                            <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                                <div *ngIf="f['email'].errors['required']">Email is required</div>
+                                <div *ngIf="f['email'].errors['email']">Email is invalid</div>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3">
+                            <mat-form-field class="gh">
+                                <mat-label>Password</mat-label>
+                                <input type="password" matInput placeholder="Enter Your Password " value="" formControlName="password"
+                                    [ngClass]="{ 'is-invalid': submitted && f['password'].errors }" class="form-control">
+                            </mat-form-field>
+
+                           
+                            <div *ngIf="submitted && f['password'].errors" class="invalid-feedback">
+                                <div *ngIf="f['password'].errors['required']">Password is required</div>
+                                <div *ngIf="f['password'].errors['minlength']">
+                                    Password must be at least 6 characters
+                                </div>
+                                <div *ngIf="f['password'].errors['maxlength']">
+                                    Username must not exceed 40 characters
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" mat-flat-button color="primary">Login</button>
+
+                    </form>
+                    <a style="color:  rgb(255, 179, 0); margin-top: 10px; " routerLink="/register"> Are you ? New user</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

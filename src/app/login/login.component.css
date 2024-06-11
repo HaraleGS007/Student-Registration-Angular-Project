@@ -1,0 +1,30 @@
+
+
+.main{
+   
+        height: 100vh;
+        background-image: url(/assets/log.jpg);
+       width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+.card{
+    margin-top: 57px;
+    border: 1px solid blueviolet;
+    box-shadow: rgba(216, 103, 103, 0.16) 0px 3px 6px, rgba(222, 17, 17, 0.23) 0px 3px 6px;
+    padding: 93px;
+    background-color: rgba(5, 14, 14, 0.29);
+    position: absolute;
+    top: -2%;
+    left: 35%;
+    color: #fdf7f7;
+}
+
+h2{
+    font-size: 38px;
+    font-style: italic;
+}
+.gh{
+    width: 250px;
+}

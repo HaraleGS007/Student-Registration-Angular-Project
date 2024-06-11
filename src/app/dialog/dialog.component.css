@@ -1,0 +1,12 @@
+.text-white{
+    text-align: center;
+    color: rgb(238, 8, 8);
+    font-size: 24px;
+}
+.ghi{
+    width: 535px;
+    margin-left: -12px;
+   }
+   .mat-mdc-dialog-container .mdc-dialog__title {
+    color: rgb(34 206 27 / 87%);
+}

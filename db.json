@@ -1,0 +1,65 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "ytytyggghgh",
+      "class": "6767",
+      "address": "gegr",
+      "email": "gghh@gmail.com",
+      "city": "",
+      "password": "",
+      "number": 9897877879679
+    }
+  ],
+  "signup": [
+    {
+      "name": "hatale",
+      "number": 222,
+      "email": "hk@gmail.com",
+      "password": "jk12345",
+      "id": 1
+    },
+    {
+      "name": "harale ganaesh",
+      "number": 7777888383,
+      "email": "rk@gmail.com",
+      "password": "rk12345",
+      "id": 2
+    },
+    {
+      "name": "kadam anil",
+      "number": 7733888992,
+      "email": "kadam@gmail.com",
+      "password": "kd12345",
+      "id": 3
+    },
+    {
+      "name": "paval",
+      "number": 9594949494,
+      "email": "paval@gmail.com",
+      "password": "pavak12345",
+      "id": 4
+    },
+    {
+      "name": "kadam ganesh",
+      "number": 77787733344,
+      "email": "kadam@gmail.com",
+      "password": "kadam@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "Ganesh Harale",
+      "number": 8844993333,
+      "email": "gs@gmail.com",
+      "password": "gs12345",
+      "id": 6
+    },
+    {
+      "name": "hhh",
+      "number": 67676,
+      "email": "yyyy@gmail.com",
+      "password": "777777",
+      "id": 7
+    }
+  ]
+}

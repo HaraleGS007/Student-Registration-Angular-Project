@@ -1,0 +1,202 @@
+<p>
+  <mat-toolbar color="primary" class="nav">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Student Register</span>
+
+    <a class="nav-link " aria-current="page" routerLink="/home">Home</a>
+
+    <a class="nav-link" routerLink="/login">Login</a>
+
+    <a class="nav-link" routerLink="/register">Register</a>
+
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+
+
+
+    <button mat-flat-button color="warn" routerLink="/login" class="me-5">Log Out</button>
+    <!-- </mat-toolbar> -->
+
+    <button mat-button (click)="openDialog()" class="btn btn-success">Registration Form</button>
+    <!-- <button mat-flat-button color="accent" data-bs-toggle="modal" data-bs-target="#xyz"> Registration Form</button> -->
+  </mat-toolbar>
+</p>
+
+<!-- 
+          Table  To show the data
+         -->
+<div class="container tb">
+  <h1 class="mt-5 mb-3">Show the student data in Table</h1>
+  <table class="table table-secondary  table-striped " style=" color: rgb(99, 93, 93);
+          font-size: 19px;
+          font-style: italic;">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Class</th>
+        <th>Email Id</th>
+        <th>Number</th>
+        <th>Address</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let stud of allstudent">
+        <td>{{stud.id}}</td>
+        <td>{{stud.name}}</td>
+        <td>{{stud.class}}</td>
+        <td>{{stud.email}}</td>
+        <td> {{stud.number}} </td>
+        <td> {{stud.address}} </td>
+       
+        <td>
+          <button mat-flat-button color="primary" (click)="EditStudent(stud)"   (click)="openDialog()" data-bs-toggle="modal" data-bs-target="#xyz">Edit</button>
+ 
+        <td> <button style="width: 30px;" type="button" mat-flat-button color="warn"  (click)="DeleteStudent(stud)">
+          <mat-icon>delete</mat-icon> </button>
+     </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+<!-- </div> -->
+
+<section>
+  <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-6 col-lg-4">
+        <mat-card class="example-card mb-3">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Excellent Contribution in Skill
+              Development</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="/assets/Award7.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              Ministry of Skill & Entrereneurship, Govt. of India.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+
+
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <mat-card class="example-card mb-3">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Excellent Contribution in Skill
+              Development</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="/assets/Award6.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              Ministry of Skill & Entrereneurship, Govt. of India.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+
+
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <mat-card class="example-card mb-3">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Excellent Contribution in Skill
+              Development</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="/assets/Award8.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              Ministry of Skill & Entrereneurship, Govt. of India.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+
+
+
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <mat-card class="example-card mb-3">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Excellent Contribution in Skill
+              Development</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="/assets/Award5.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              Ministry of Skill & Entrereneurship, Govt. of India.
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+        
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <mat-card class="example-card mb-3">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Ministry of Skill & Entrereneurship, Govt. of India</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="/assets/Award1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              Hon'ble Minister Ravi Shankar Prasad
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <mat-card class="example-card mb-3">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Ministry of Skill & Entrereneurship, Govt. of India</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="/assets/Award1.jpg" style="height: 250px;" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <p>
+              Hon'ble Minister Ravi Shankar Prasad
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+    </div>
+  <!-- </div> -->
+</section>
